@@ -1,4 +1,3 @@
-
 var a = prompt("Nhập vào giá trị của a:");
 var b = prompt("Nhập vào giá trị của b:");
 var c = prompt("Nhập vào giá trị của c:");
@@ -10,7 +9,7 @@ c = Number(c);
 if (a > 0 && b > 0 && c > 0) {
     if (a + b > c && a + c > b && b + c > a) {
         if (a == b && b ==c) {
-            document.write("Đây là một tam giác đều.");
+            document.write("Đây là một tam giác đều."); 
         } else if (a ==b || a ==c ||b ==c) {
             document.write("Đây là một tam giác can.");
         } else if (a*a +b*b ==c*c ||a*a +c*c ==b*b ||b*b +c*c ==a*a) {

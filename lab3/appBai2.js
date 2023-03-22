@@ -1,14 +1,14 @@
 let result = document.getElementById('result');
 
-function addToResult(value) {
+function getElementById(value) {
   result.value += value;
 }
 
-function clearResult() {
+function getElementById() {
   result.value = '';
 }
 
-function calculateResult() {
+function getElementById() {
   try {
     result.value = eval(result.value);
   } catch (error) {

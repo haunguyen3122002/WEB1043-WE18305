@@ -5,7 +5,7 @@ function tinhDiemTrungBinh(diemToan, diemLy, diemHoa, diemSinh) {
     if (diemToan < 0 || diemToan > 10 || diemLy < 0 || diemLy > 10 || diemHoa < 0 || diemHoa > 10 || diemSinh < 0 || diemSinh > 10) {
       return "Điểm nhập vào không hợp lệ!";
     }
-    var diemTrungBinh = (diemToan + diemLy + diemHoa + diemSinh) / 4;
+    var diemTrungBinh = (diemToan + diemLy + diemHoa + diemSinh) / 4; 
     if (diemTrungBinh >= 9 && diemTrungBinh <= 10) {
       return "Giỏi";
     } else if (diemTrungBinh >= 7 && diemTrungBinh < 9) {
@@ -14,7 +14,7 @@ function tinhDiemTrungBinh(diemToan, diemLy, diemHoa, diemSinh) {
       return "Trung bình";
     } else if (diemTrungBinh < 5) {
       return "Yếu";
-    }
+    } 
   }
   
   function tinhDiemTrungBinhSwitch(diemToan, diemLy, diemHoa, diemSinh) {

@@ -43,8 +43,8 @@ class Student {
   
   console.log('Sorted students by age in days:');
   for (let student of students) {
-    document.write(`${student.getFullName()} - ${student.getAgeInDays()} days old`);
+    document.write(`${student.getFullName()} - ${student.getAgeInDays()} days old`+"<br>");
   }
-  
   document.write(`Screen width: ${screen.width}`);
+  document.write("<br>")
   document.write(`Screen height: ${screen.height}`);

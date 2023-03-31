@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,117 +8,171 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="tong">
 
-    <div class="menu">
-        <img class="icons" src="" alt="">
-        <a href="http://">trang chu</a>
-        <a href="http://">gioi thieu</a>
-        <a href="http://">lien he</a>
-        <a href="http://">cai chi do</a>
-        <div class="timkiem"><input name="keyword" id="keyword" type="text" class="text_search" placeholder="Từ khóa" value></div>
-        <ul>
-            <a href="http://">dang nhap</a>
-            <a href="http://">dang ki</a>
-        <ul>
-    </div>
-    <div class="header">banner
-        <img src="" alt="">
-    </div>
-    <div class="slider">slider
-        <div>
-            <div class="giamgia">
-            </div>
-            <div class="dangki">
-            </div>
-            <div class="bookngay">
-            </div>
+        <div class="menu">
+            <img class="icons" src="img/icons.jpg" alt="">
+            <a href="#id1">trang chu</a>
+            <a href="#id2">gioi thieu</a>
+            <a href="#id3">Cai chi do</a>
+            <a href="#id4">lien he</a>
+            <div class="timkiem"><input name="keyword" id="keyword" type="text" class="text_search"
+                    placeholder="Từ khóa" value></div>
+            <a href="#id5">dang nhap</a>
+            <a href="#id5">dang ki</a>
         </div>
-        <div class="dautiep">
+        <div class="header" id="id1">
+            <img class="banner" src="img/banner-1.jpg" alt="" >
         </div>
-        <div class="thanhcuon">
-            <img src="" alt="">
-            </div>
-            <div class="dautiep">
-            </div>
-        </div>
-        <div class="slider-1">
-            <div class="diadiem-1">
+        <div class="slider" id="id1">
+            <div>
+                <div class="giamgia">
+                    <div class="svg-wrapper">
+                        <svg height="80" width="400">
+                            <rect id="shape" />
+                            <div id="text">
+                                <a href="#id3">Giam gia</a>
+                            </div>
+                        </svg>
+                    </div>
+                </div>
+                <div class="giamgia">
+                    <div class="svg-wrapper">
+                        <svg height="80" width="400">
+                            <rect id="shape" />
+                            <div id="text">
+                                <a href="#id5">Dang ki</a>
+                            </div>
+                        </svg>
+                    </div>
+                </div>
+                <div class="giamgia">
+                    <div class="svg-wrapper">
+                        <svg height="80" width="400">
+                            <rect id="shape" />
+                            <div id="text">
+                                <a href="#id3">Book ngay</a>
+                            </div>
+                        </svg>
+                    </div>
+                </div>
 
+            </div>
+            <div class="thanhcuon">
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/anh1.jpg" style="width: 100%;">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/anh2.jpg" style="width: 100%;">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/anh3.jpg" style="width: 100%;">
+                        <div class="text"></div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-1" id="id2">
+            <div class="diadiem-1">
+                <img src="img/diadiem-1.jpg" alt="" style="width: 100%;height: 100%;">
             </div>
             <div class="diadiem-2">
-
+                <img src="img/diadiem-2.jpg" alt="" style="width: 100%;height: 100%;">
             </div>
             <div class="diadiem-3">
-
+                <img src="img/diadiem-3.jpg" alt="" style="width: 100%;height: 100%;">
             </div>
         </div>
-        <div class="slider-2">
+        <div class="slider-2" id="id3">
             <div>
                 <h1>Cac goi khuyen mai</h1>
-            <div class="goi-1">
+                <div class="goi-1">
 
-            </div>
-            <div class="goi-2">
-                
-            </div>
-            <div class="goi-3">
+                </div>
+                <div class="goi-2">
 
+                </div>
+                <div class="goi-3">
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="slider-3">
-        <div>
-            <h1>Cac video noi bac</h1>
-            <div class="video-1">
+        <div class="slider-3">
+            <div>
+                <h1>Cac video noi bac</h1>
+                <div class="video-1">
 
-            </div>
+                </div>
             </div>
             <div>
-            <div class="video-2">
+                <div class="video-2">
 
-            </div>
-            <div class="video-3">
+                </div>
+                <div class="video-3">
 
+                </div>
             </div>
+        </div>
+        <div class="thongtin" id="id5">
+            <center>
+                <form>
+                    <label for="name">Họ và tên:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="phone">Số điện thoại:</label><br>
+                    <input type="text" id="phone" name="phone"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </center>
+        </div>
+        <div class="ketthuc" id="id4">
+            <div class="ketthuc-1">
+                <h1>VE CHUNG TOI</h1><br><br>
+                Công ty là đơn vị tổ chức tour lâu năm.<br> Chúng tôi luôn nổ lực để mang đến sự hài<br> lòng cho từng
+                khách hàng.
             </div>
-    </div>
-    <div class="thongtin">
-        <center>
-        <div>
-            <input name="keyword" id="keyword" type="text" class="text_ten" placeholder="ho va ten" value>
-        </div>
-        <div>
-            <input name="keyword" id="keyword" type="text" class="text_gmail" placeholder="gmail" value>
-            <input name="keyword" id="keyword" type="text" class="text_sdt" placeholder="sdt" value>
-        </div>
-        <input name="keyword" id="keyword" type="text" class="text_diemden" placeholder="diemden" value>
-        <input name="keyword" id="keyword" type="text" class="text_ngaydukien" placeholder="ngaydukien" value>
-        <div style="width: 100%;">
-            <textarea name="" id="" class="text_loinhan" placeholder="loinhan" cols="40" rows="8"></textarea>
-        </div>
-        </center>
-    </div>
-    <div class="ketthuc">
-        <div class="ketthuc-1">
-            <h1>VE CHUNG TOI</h1><br><br>
-            Công ty là đơn vị tổ chức tour lâu năm.<br> Chúng tôi luôn nổ lực để mang đến sự hài<br> lòng cho từng khách hàng.
-        </div>
-        <div class="ketthuc-2">
-            <h1>CONG TY DU LICH TNHH DU LICH</h1><br><br>
-            Địa chỉ: <br>
-            Hotline:<br>
-            Email: <br>
-            Số điện thoai: <br>
-        </div>
-        <div class="ketthuc-3">
-            <h1>CHINH SACH</h1><br><br>
-            Được cấp phép <br>
-            Mục danh sách <br>
-            Hỗ trợ thanh toán <br>
+            <div class="ketthuc-2">
+                <h1>CONG TY DU LICH TNHH DU LICH</h1><br><br>
+                Địa chỉ: <br>
+                Hotline:<br>
+                Email: <br>
+                Số điện thoai: <br>
+            </div>
+            <div class="ketthuc-3">
+                <h1>CHINH SACH</h1><br><br>
+                Được cấp phép <br>
+                Mục danh sách <br>
+                Hỗ trợ thanh toán <br>
+            </div>
         </div>
     </div>
-</div>
+
+    <script src="./app.js"></script>
 </body>
+
 </html>

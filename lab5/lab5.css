@@ -1,0 +1,31 @@
+.todo-list{
+    background-color: wheat;
+    width: 500px;
+    height: 600px;
+}
+.name-task{
+    padding: 10px;
+    margin: 20px;
+    width: 364px;
+    border-radius: 5px;
+}
+.text-mota{
+    border-radius: 5px;
+}
+.add{
+    background-color: black;
+    width: 80px;
+    height: 40px;
+    margin: 20px;
+    margin-left: 300px;
+    border-radius: 5px;
+}
+.add a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+}
+.danh-sach-task{
+    display: flex;
+    margin-left: 10px;
+}

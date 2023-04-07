@@ -9,14 +9,14 @@
 </head>
 <style>
   #myVideo {
-    width: 50%;
-    height: 50%;
+    height: 500px;
+    margin: 0 auto;
   }
 </style>
 
 <body>
   <video id="myVideo">
-    <source id="mp4_src" src="video/video 4k-2.mp4" type="video/mp4">
+    <source id="mp4_src" src="video/JPMI6644.mp4" type="video/mp4">
   </video>
 <br>
   <button onclick="playVid()" type="button">Play Video</button>
@@ -24,8 +24,9 @@
   <button onclick="increaseVolume()">Tăng âm lượng</button>
   <button onclick="decreaseVolume()">Giảm âm lượng</button>
   <button onclick="stopVideo()">Dừng video</button>
-  <button onclick="toggleLoop()">Bật/Tắt lặp lại</button>
-
+  <button>Bật lặp lại video
+  <input type="checkbox" onclick="toggleLoop()">
+  </button>
   <script>
     //play and pause
     var x = document.getElementById("myVideo");

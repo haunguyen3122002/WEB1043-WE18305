@@ -6,11 +6,13 @@
 
 .tong{
     margin: 0 auto;
-
+    width: 90%;
 }
 .menu{
+  position: fixed;
+  z-index: 10;
     padding: 0 20px;
-    width: 100%;
+    width: 90%;
     height: 80px;
     background-color: black;
     display: flex;
@@ -65,7 +67,7 @@
 }
 .header{
     width: 100%;
-    height: 500px;
+    height: 640px;
 }
 .banner{
     width: 100%;
@@ -73,18 +75,16 @@
 }
 .slider{
   width: 100%;
-    height: 500px;
+    height: 520px;
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    background-color: white;
   background-image: url(img/background-2.jpg);
 }
 .slider-left {
   flex: 1;
 }
 .giamgia {
-    position: relative;
     width: 400px;
     height: 80px;
     margin: 40px;
@@ -131,7 +131,7 @@
     stroke: #06D6A0;
   }
 .thanhcuon{
-  padding: 10px 0;
+  padding: 50px 50px;
   flex: 1;
   width: 100%;
   height: 100%;    
@@ -207,54 +207,82 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 .slider-1{
-    background-color: blue;
     height: 500px;
-    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.diadiem{
+  display: flex;
 }
 .diadiem-1{
     background-color: wheat;
     width: 400px;
     height: 250px;
     margin: 50px;
+    margin-top: 30px;
 }
+
 .diadiem-2{
     background-color: wheat;
     width: 400px;
     height: 250px;
     margin: 50px;
+    margin-top: 30px;
 }
 .diadiem-3{
     background-color: wheat;
     width: 400px;
     height: 250px;
     margin: 50px;
+    margin-top: 30px;
 }
 .slider-2{
-    background-color:aquamarine;
-    height: 500px;
-    display: flex;
+    height: 600px;
 }
 h1{
     text-align: center;
 }
+.cacgoi{
+  display: flex;
+}
+.goi{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    border: 0.1px solid grey;
+    border-radius: 5px;
+    transition: 0.5s;
+}
 .goi-1{
-    background-color: darkslategray;
-    width: 1000px;
-    height: 120px;
-    margin: 20px;
+  font-size: 80px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
 }
-.goi-2{
-    background-color: darkslategray;
-    width: 1000px;
-    height: 120px;
-    margin: 20px;
+#goi-dangki{
+  width: 160px;
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  transition:  0.5s;
+  font-weight: bold;
 }
-.goi-3{
-    background-color: darkslategray;
-    width: 1000px;
-    height: 120px;
-    margin: 20px;
+#goi-dangki a{
+  text-decoration: none;
 }
+#goi-dangki:hover{
+  background-color:  rgba(255,92,98,.3);
+}
+.goi:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 8px gray;
+}
+
 .slider-3{
     background-color: chartreuse;
     height: 500px;
@@ -287,35 +315,13 @@ h1{
     background-color: grey;
     height: 500px;
 }
-.text_ten{
-    padding: 10px;
-    margin: 20px;
-    width: 800px;
+form{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
 }
-.text_gmail{
-    padding: 10px;
-    margin: 20px;
-    width: 455px;
-}
-.text_sdt{
-    padding: 10px;
-    margin: 20px;
-    width: 300px;
-}
-.text_diemden{
-    padding: 10px;
-    margin: 20px;
-    width: 800px;
-}
-.text_ngaydukien{
-    padding: 10px;
-    margin: 20px;
-    width: 800px;
-}
-.text_loinhan{
-    padding: 10px;
-    margin: 20px;
-    width: 800px;
+.thongtin-you{
+  display: flex;
 }
 .ketthuc{
     background-color: black;

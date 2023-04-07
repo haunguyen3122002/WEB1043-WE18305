@@ -62,37 +62,32 @@
         <h5>Lab 7: drag & drop</h5>
         <p>drag item from right column</p>
         <div class="main">
-            <div class="left">
+            <div class="left" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                 BIN
             </div>
             <div class="right">
-                <span class="item" id="one" draggable="true">ONE</span>
-                <span class="item" id="one" draggable="true">TWO</span>
-                <span class="item" id="one" draggable="true">THREE</span>
-                <span class="item" id="one" draggable="true">FOUR</span>
-                <span class="item" id="one" draggable="true">FIVE</span>
+                <span class="item" id="drag1" draggable="true" ondragstart="drag(event)">ONE</span>
+                <span class="item" id="drag2" draggable="true" ondragstart="drag(event)">TWO</span>
+                <span class="item" id="drag3" draggable="true" ondragstart="drag(event)">THREE</span>
+                <span class="item" id="drag4" draggable="true" ondragstart="drag(event)">FOUR</span>
+                <span class="item" id="drag5" draggable="true" ondragstart="drag(event)">FIVE</span>
             </div>
         </div>
     </div>
     <script>
-        let item = document.getElementByIdClassname("item")
-        for (let i = 0; i < item.length; i++) {
-            let item = item[i];
-            item.setAttribute("draggable", true);
-            item.addEventlListener("dragtart", (e) => {
-                e.dataTranser.setData("item", item.id);
-            });
+        function allowDrop(ev) {
+            ev.preventDefault();
         }
-        let bin = document.getElementById("bin");
-        bin.addEventListener("dragover", (e) => {
-            if (e.preventDefault) e.preventDefault();
-        });
 
-        bin.addEventListener("drop", (e) => {
-            let itemId = e.dataTransfer.getData("itemId");
-            let draggingItem = document.getElementById("itemId");
-            e.target.appendChild(draggingItem);
-        });
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
     </script>
 </body>
 

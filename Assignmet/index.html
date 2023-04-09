@@ -25,41 +25,51 @@
             <a href="#id5">dang ki</a>
         </div>
         <div class="header" id="id1">
-            <img class="banner" src="img/banner-1.jpg" alt="">
+            <div class="banner">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="img/anh1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/anh2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/anh3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/anh4.jpg" alt="">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
         </div>
+
         <div class="slider" id="id1">
             <div class="slider-left">
-                <div class="giamgia">
-                    <div class="svg-wrapper">
-                        <svg height="80" width="400">
-                            <rect id="shape" />
-                            <div id="text">
-                                <a href="#id3" style="color:white">Giam gia</a>
-                            </div>
-                        </svg>
-                    </div>
+                <div class="dangki">
+                    <a class="dangki-text" href="#id5">DANG KI</a>
                 </div>
                 <div class="giamgia">
-                    <div class="svg-wrapper">
-                        <svg height="80" width="400">
-                            <rect id="shape" />
-                            <div id="text">
-                                <a href="#id5" style="color:white">Dang ki</a>
-                            </div>
-                        </svg>
-                    </div>
+                    <a class="dangki-text" href="#id3">GIAM GIA</a>
                 </div>
-                <div class="giamgia">
-                    <div class="svg-wrapper">
-                        <svg height="80" width="400">
-                            <rect id="shape" />
-                            <div id="text">
-                                <a href="#id3" style="color:white">Book ngay</a>
-                            </div>
-                        </svg>
-                    </div>
+                <div class="bookngay">
+                    <a class="dangki-text" href="#id3">BOOK NGAY</a>
                 </div>
-
             </div>
             <div class="thanhcuon">
 
@@ -93,12 +103,15 @@
         </div>
         <div class="slider-1" id="id2">
             <div>
-                <h1 style="padding-top: 10px;">CAC DIA DIEM NOI BAT</h1>
+                <h2 style="font-family: UTM Bebas,sans-serif;" class="dau-gach">
+                    CAC DIA DIEM NOI BAT
+                </h2>
+
             </div>
             <div class="diadiem">
                 <div class="diadiem-1">
                     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/diadiem-1.jpg" alt=""
-                        style="width: 100%;height: 100%;">
+                        style="width: 100%;height: 100%;border-radius: 10px;">
                     <div style="font-size: 15px; text-align:justify; padding-top: 10px;">
                         Bà Nà Hills được xây dựng trên đỉnh núi Chúa,
                         thuộc huyện Hòa Vang, cách trung tâm thành phố Đà Nẵng
@@ -109,7 +122,7 @@
                 </div>
                 <div class="diadiem-2">
                     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/diadiem-2.jpg" alt=""
-                        style="width: 100%;height: 100%;">
+                        style="width: 100%;height: 100%;border-radius: 10px;">
                     <div style="font-size: 15px; text-align:justify; padding-top: 10px;">
                         Động Phong Nha là một trong những danh thắng tự nhiên thuộc
                         hệ thống hang động của vườn Quốc gia Phong Nha – Kẻ Bàng, là
@@ -120,7 +133,7 @@
                 </div>
                 <div class="diadiem-3">
                     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/diadiem-3.jpg" alt=""
-                        style="width: 100%;height: 100%;">
+                        style="width: 100%;height: 100%;border-radius: 10px;">
                     <div style="font-size: 15px; text-align:justify; padding-top: 10px;">
                         Vịnh Hạ Long (vịnh nước nơi rồng đáp xuống) là một vịnh nhỏ thuộc
                         phần bờ Tây vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam, bao gồm
@@ -132,7 +145,7 @@
         </div>
         <div class="slider-2" id="id3">
             <div>
-                <h1>CAC GOI KHUYEN MAI</h1>
+                <h2 class="dau-gach">CAC GOI KHUYEN MAI</h2>
             </div>
             <div class="cacgoi">
                 <div class="goi">
@@ -201,27 +214,42 @@
         </div>
         <div class="slider-3">
             <div>
-                <h1>Cac video noi bac</h1>
-                <div class="video-1">
-
-                </div>
+                <h2 class="dau-gach">Cac video noi bac</h2>
             </div>
-            <div>
-                <div class="video-2">
-
+            <div class="cacvideo">
+                <div>
+                    <div class="video-1">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yOtqF9DRI-s"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="video-3">
-
+                <div>
+                    <div class="video-2">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lTCsqTlcjvg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-3">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ggq5UVbKlPE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="thongtin" id="id5">
-            <h1>DANG KI TOUR NGAY</h1>
+            <div>
+                <h1 style="padding: 20px;">DANG KI TOUR NGAY</h1>
+            </div>
             <form>
                 <input type="text" id="name" placeholder="Họ và tên" name="name">
                 <div class="lien-lac">
-                <input type="text" id="name" placeholder="Sdt" name="phone">
-                <input type="text" id="name" placeholder="Email" name="email">
+                    <input type="text" id="name" placeholder="Sdt" name="phone">
+                    <input type="text" id="name" placeholder="Email" name="email">
                 </div>
                 <input type="text" id="name" placeholder="Chọn địa điểm" name="chondiadiem">
                 <input type="date" id="name" name="ngay">
@@ -254,7 +282,6 @@
 
         <p id="demo"></p>
     </div>
-
     <script src="./app.js"></script>
 </body>
 
